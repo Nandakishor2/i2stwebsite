@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>I2S Technologies</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .imgcontainer {
+      height: 80px;
+      width: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .imgcontainer img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .address1,
+    .address2 {
+      display: flex;
+      flex-direction: column;
+      /* Change to column for responsiveness */
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 20px;
+      /* Add space between sections */
+    }
+
+    .compimgholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      /* Add margin for spacing */
+    }
+
+    .compimgholder img {
+      width: 50%;
+      height: auto;
+      /* Maintain aspect ratio */
+      object-fit: contain;
+    }
+	 .compimgholder1 img {
+      width: 300px;
+      height: auto;
+      /* Maintain aspect ratio */
+      object-fit:none;
+    }
+
+    .contact-us {
+      text-align: left;
+      /* Center align text for better presentation */
+      margin: 0 40px;
+      /* Add margin to avoid text touching the edges */
+    }
+
+    .address-container {
+      margin-top: 20px;
+      /* Add space between sections */
+    }
+
+    @media (min-width: 768px) {
+
+      .address1,
+      .address2 {
+        flex-direction: row;
+        /* Change back to row on larger screens */
+      }
+
+      .compimgholder {
+        width: 45%;
+        /* Set a fixed width for larger screens */
+        margin-bottom: 0;
+        /* Remove bottom margin */
+      }
+
+      .contact-us {
+        width: 50%;
+        /* Set width for contact us section */
+      }
+    }
+    .quote_btn.active{
+      color: #000000;
+      background-color: #ffffff;
+
+    }
+    .quote_btn.active:hover{
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span class="imgcontainer">
+              <img src="images/logo.png" alt="Logo">
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Domain</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#servicesatindex">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="clients.html">Expertise</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#clientslogo">Our Clients</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              
+            </ul>
+          </div>
+          <div class="quote_btn-container">
+            <a href="contact.html" class="quote_btn active">
+              Contact US
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="address1">
+    <div class="compimgholder">
+      <img src="images/company.jfif" alt="Company Image">
+    </div>
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <p>We’re here to assist you! Please feel free to visit us at our office or get in touch for any inquiries.</p>
+
+      <div class="address-container">
+
+        <p>
+          <strong>Head Office:</strong> Bengaluru <br> Integrated Intelligent Solutions and Technologies Private Limited<br>
+          135/2, Ground Floor, "Sri Nikethan", Maruthi Industrial Estate, ITPL Road, Rajapalya, Whitefield.<br>
+          <!-- <strong>Landmark:</strong> Behind Zuri Hotel<br> -->
+          Bangalore, 560048 , Karnataka, India
+        </p>
+        <p>
+          <strong>Branch Office:</strong> Noida <br> I-Thum Tower , Office no.102, Tower-A,I-Thum,Plot-A-40, Sector-62,Noida 201301,UP,India
+        </p>
+
+
+      </div>
+
+      <!-- <p>If you have any questions, feel free to reach out:</p> -->
+      
+    </div>
+  </section>
+
+  <hr>
+  
+  <hr>
+  <section class="address2">
+    <div class="compimgholder">
+      <img src="images/factory.jpg" alt="Company Image">
+    </div>
+    <div class="contact-us">
+
+
+      <div class="address-container">
+
+        <p style="font-size: 0.9rem;">
+          <strong>Factory Unit-1 : </strong>Integrated Intelligent Solutions and Technologies Private Limited<br>
+         40/1, Garudacharpalya , Goshala Road , Mahadevpura Post<br>
+          <!-- <strong>Landmark:</strong> Near Zoom Fitness<br> -->
+         Bangalore, 560048,Karnataka, India
+        </p>
+      </div>
+
+      <!-- <p>If you have any questions, feel free to reach out:</p> -->
+      
+    </div>
+  </section>
+  <hr>
+  <section class="address2">
+    <div class="compimgholder">
+      <img src="images/factorynew.jpg" alt="Company Image">
+    </div>
+    <div class="contact-us">
+
+
+      <div class="address-container">
+
+        <p style="font-size: 0.9rem;">
+          <strong>Factory Unit-2 : </strong>Integrated Intelligent Solutions and Technologies Private Limited<br>
+          245, Masthenahalli I.A Phase-1 , Chikkaballapur<br>
+          <!-- <strong>Landmark:</strong> Near Zoom Fitness<br> -->
+          Karnataka, India
+        </p>
+      </div>
+
+      <p>If you have any questions, feel free to reach out:</p>
+      <p>
+        <strong>Email Address:</strong> <a href="mailto:info@newoffice.com">info@i2stechnologies.com</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="footer_container">
+    <section class="info_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="info_detail">
+              <h4>I2S Technologies</h4>
+              <p>
+                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+                words, combined with a handful
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 mx-auto">
+            <div class="info_link_box">
+              <h4>Quick Links</h4>
+              <div class="info_links">
+                <a class="" href="index.html">Home</a>
+                <a class="" href="about.html">About</a>
+                <a class="" href="index.html#servicesatindex">Services</a>
+                <a class="" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-0 ml-auto">
+            <div class="info_contact">
+              <h4>Address</h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>Location</span>
+                </a>
+
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>info@i2stechnologies.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="https://www.facebook.com/i2stechnologies/">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/i2s-technologies-pvt-ltd/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

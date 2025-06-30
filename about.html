@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>I2S</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .imgcontainer {
+      height: 80px;
+      width: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .imgcontainer img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 50px auto;
+    }
+
+    .milestone-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .line {
+      position: absolute;
+      width: 4px;
+      background-color: #000;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .dot {
+      width: 16px;
+      height: 16px;
+      background-color: #000;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .milestone {
+      position: relative;
+      width: 35%;
+      height: auto;
+      /* Adjusted width */
+      padding: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      z-index: 3;
+      /* Ensure milestone is above both the line and the dot */
+    }
+
+    .milestone.left {
+      margin-right: auto;
+      /* Align to the left */
+
+    }
+
+    .milestone.left img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    .milestone.right {
+      margin-left: auto;
+      /* Align to the right */
+    }
+
+    .milestone.right img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+
+    .milestone-content {
+      padding: 10px;
+    }
+
+    .milestone-container:nth-child(even) .milestone {
+      order: 1;
+      /* Right side for even milestones */
+    }
+
+    .milestone-container:nth-child(odd) .milestone {
+      order: 2;
+      /* Left side for odd milestones */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span class="imgcontainer">
+              <img src="images/logo.png" alt="Logo">
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Domain</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#servicesatindex"> Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.html">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#clientslogo">Our Clients</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item" style="margin-left: 8vw;">
+                <a href="contact.html" class="nav-link">
+                  Contact US
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <h1><strong> Company Info </strong> </h1>
+  <div class="container" style="display: flex; align-items: flex-start; margin: 20px 0; justify-content: space-evenly;">
+    <span>
+      <p style="margin-right: 20px; font-size: 24px; ">History</p>
+      <p style="flex: 1; max-width: 600px; font-size: 16px; line-height: 1.5;">
+        I2S Technologies Pvt. Limited, headquartered at Bangalore, India started by technocrats with a vision to provide
+        solutions with state of art technologies and methodologies for control & instrumentation, electrical and safety
+        requirements, with an enthusiasm for bringing smarter environs. <br> <br>
+
+        I2S Technologies was conceived as a technological startup to deliver critical infrastructure projects and
+        cutting edge & advanced engineering solutions. The core of the company is to develop specialization in the
+        system integration business, by providing highest grade automation and information systems, with standardization
+        and ease of use to customers. I2ST is a Security and Safety company providing solutions for integrated buildings
+        and industry alike with adhering to international standards for the infrastructure projects.
+
+      </p>
+    </span>
+
+    <img src="images/company.jfif" alt="Founding Vision"
+      style="width: 300px; height: auto; margin-left: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+  </div>
+  <hr>
+  <div class="container-fluid"
+    style="display: flex; align-items: center; margin: 20px 0; justify-content: center;flex-direction: column;">
+    <img src="images/ourteam/ceo.jfif" alt="Founding Vision"
+      style="width: 300px; height: auto; margin-left: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  ;">
+    <span>
+
+      <p style="flex: 1; max-width: 700px; font-size: 16px; line-height: 1.5;margin-top:5%;text-align: justify;">
+        Mr. Aarun Thapliyal, the CEO of I2S Technologies, brings over three decades of industry experience, guiding the
+        company with
+        a forward-thinking approach. His passion for innovation in technologies and commitment to excellence have been
+        instrumental in
+        positioning I2ST as a leader in Mass Transportation segment . <br> Under his leadership, I2ST continues to
+        thrive by delivering cutting-edge, efficient solutions to its clients.
+      </p>
+    </span>
+
+
+  </div>
+
+  <hr>
+
+  <h1>Our RoadMap</h1>
+  <div class="timeline">
+
+    <!-- First Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone left">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 1"> -->
+        <div class="milestone-content">
+          <h3>2011</h3>
+          <p>Started with small group of 7 employees</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone right">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 2"> -->
+        <div class="milestone-content">
+          <h3>2012</h3>
+          <p>Started projects on Tunnel Safety Ventilation Systems in UG MTR and OCC</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone left">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 3"> -->
+        <div class="milestone-content">
+          <h3>2018</h3>
+          <p>Designed and Implemented Station and Tunnel Safety Ventilation Systems (ECS, TVS, BMS, FACP) in UG MTR and OCC</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone right">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 4"> -->
+        <div class="milestone-content">
+          <h3>2019</h3>
+          <p>Corridor ventilation integrated control systems (ECS, TVS, BMS, FACP) in UG and Elevated stations in MTR and OCC/BCC</p>
+        </div>
+      </div>
+    </div>
+  <!-- Fifth Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone left">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 1"> -->
+        <div class="milestone-content">
+          <h3>2020</h3>
+          <p>PAN India presence</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sixth Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone right">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 2"> -->
+        <div class="milestone-content">
+          <h3>2021</h3>
+          <p>Started IBMS, ESDS( Oil & Gas) projects and collaborated with OEM to enhance equipment design modernization.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seventh Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone left">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 3"> -->
+        <div class="milestone-content">
+          <h3>2022</h3>
+          <p>Commissioned, <br> 1. Electrical Substation and Transmission <br> 2. Power Management Systems</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Milestone -->
+    <div class="milestone-container">
+      <div class="line"></div>
+      <div class="dot" style="top: 20%;"></div>
+      <div class="milestone right">
+        <!-- <img src="/images/milestone.jpg" alt="Milestone 4"> -->
+        <div class="milestone-content">
+          <h3>2023</h3>
+          <p>Started Road Tunnel Projects</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <section class="layout_padding layout_margin"
+    style="display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding-left: 15%;padding-right: 15%;">
+    <h3>Skills and Certifications</h3>
+    <h6>
+      I2S Technologies boasts a diverse range of technical expertise and industry-recognized certifications, allowing
+      the company to provide top-tier solutions across various sectors. Our skilled professionals are proficient in
+      advanced automation, control systems, and instrumentation, ensuring seamless integration of cutting-edge
+      technologies.</h6>
+
+    <ol>
+      <li>SIL</li>
+      <li>Plant SCADA</li>
+      <li>Control Expert</li>
+      <li>Network Certifications</li>
+      <li>VFD</li>
+      <li>SIL-4 HIMA-PLC Software Certifications</li>
+      <li>3D MAX</li>
+      <li>Autocad</li>
+      <li>SQL</li>
+
+    </ol>
+
+
+
+
+
+
+
+
+
+
+  </section>
+  <section class="about_section layout_padding layout_margin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-box">
+            <div class="heading_container" ">
+              <h2 style=" margin-left: 45%;">Our Team</h2>
+            </div>
+            <p>
+              At I2S Technologies, we have dynamic, talented team of automation experts committed to deliver robust
+              innovative solutions to industrial needs. Our diverse group have unique skills and perspectives to drive
+              innovation and deliver cutting-edge automation solutions within given timeframe for our clients. <br>
+              Each member of our team brings a wealth of experience in engineering, software development, and project
+              management. We believe in fostering a culture of support and collaboration, empowering each member to
+              contribute their best.
+              Together, we are dedicated to achieving our mission and making a meaningful impact in our industry. Meet
+              the individuals who make it all happen!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/team.jfif" alt="Team Member 4">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/ourteam/team1.jfif" alt="Team Member 1">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/ourteam/team2.jfif" alt="Team Member 2">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/ourteam/team3.jfif" alt="Team Member 3">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row " style="margin-top: 1%;">
+        <div class="col-md-3">
+ <div class="img-box">
+            <img src="images/ourteam/team4.png" alt="Team Member 4">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/ourteam/bmteam.jpg" alt="Team Member 4">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="img-box">
+            <img src="images/ourteam/factory.jpeg" alt="Team Member 1">
+          </div>
+        </div>
+        <div class="col-md-3">
+		 <div class="img-box">
+            <img src="images/ourteam/team5.jfif" alt="Team Member 1">
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="footer_container">
+    <section class="info_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="info_detail">
+              <h4>I2S Technologies</h4>
+              <p>
+                I2S Technologies is a leader in automation and industrial solutions, delivering innovative and efficient
+                services across various sectors.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 mx-auto">
+            <div class="info_link_box">
+              <h4>Quick Links</h4>
+              <div class="info_links">
+                <a class="" href="index.html">Home</a>
+                <a class="" href="about.html">About</a>
+                <a class="" href="index.html#servicesatindex">Services</a>
+                <a class="" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-0 ml-auto">
+            <div class="info_contact">
+              <h4>Address</h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>Location</span>
+                </a>
+
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>info@i2stechnologies.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="https://www.facebook.com/i2stechnologies/">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/i2s-technologies-pvt-ltd/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved, 2024
+
+      </p>
+    </div>
+  </footer>
+  <!-- jQuery -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
